@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lesson 4: User interaction</string>
+    <string-array name="labels_array">
+        <item>Islam</item>
+        <item>Katholik</item>
+        <item>Protestan</item>
+        <item>Hindu</item>
+        <item>Buddha</item>
+        <item>Konghucu</item>
+        <item>Lainnya</item>
+    </string-array>
+</resources>
+

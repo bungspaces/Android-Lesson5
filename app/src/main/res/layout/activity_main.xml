@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16sp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16sp"
+                android:paddingTop="16sp"
+                android:paddingRight="16sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="16sp"
+                    android:paddingTop="16sp"
+                    android:paddingRight="16sp"
+                    android:paddingBottom="16sp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text="Nama Mahasiwa*"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/txtNamaMhs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24sp"
+                        android:ems="16"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NIM*"
+                        android:textColor="#000"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/txtNim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10sp"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis Kelamin"
+                        android:textSize="18sp"
+                        android:textColor="#000"/>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <RadioButton
+                            android:id="@+id/rbJk1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Laki - Laki" />
+
+                        <RadioButton
+                            android:id="@+id/rbJk2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10sp"
+                            android:text="Perempuan" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Agama"
+                        android:textSize="18sp"
+                        android:textColor="#000"/>
+
+                    <Spinner
+                        android:id="@+id/spAgama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8sp"
+                        android:layout_marginBottom="16sp"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tempat Lahir*"
+                        android:textColor="#000"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/txtTempatLahir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10sp"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal Lahir"
+                        android:textColor="#000"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/dTglLahir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10sp"
+                        android:ems="10"
+                        android:inputType="date" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hobi / aktifitas yang disukai (minimal 5)"
+                        android:textSize="18sp"
+                        android:textColor="#000"/>
+
+                    <CheckBox
+                        android:id="@+id/cbHobi1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pemrograman Komputer" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Memasak" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Berkendara sepeda motor" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pertukangan kayu" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Meditasi" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Menari/berdansa" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Berinvestasi" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Memperbaiki mesin" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fotografi" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Seni bela diri" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bersepeda" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bermain Billiard" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dunia Perledengan" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sukarela dalam kegiatan sosial" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Memancing" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Berkebun" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bermain alat musik" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Memanah" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Merajut/menjahit" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kaligrafi" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Berbahasa" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Snorkeling" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Menulis" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Membaca" />
+
+                    <CheckBox
+                        android:id="@+id/cbHobi25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10sp"
+                        android:text="Lainnya" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tingkat minat Programming Android*"
+                        android:textSize="18sp"
+                        android:layout_marginTop="24dp"
+                        android:textColor="#000"/>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="46dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingBottom="12sp"
+                            android:text="Paling tidak berminat"
+                            android:textSize="12sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbMinat1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textSize="8sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbMinat2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="2"
+                            android:textSize="8sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbMinat3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="3"
+                            android:textSize="8sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbMinat4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="4"
+                            android:textSize="8sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbMinat5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="5"
+                            android:textSize="8sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbMinat6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="6"
+                            android:textSize="8sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbMinat7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="7"
+                            android:textSize="8sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbMinat8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="8"
+                            android:textSize="8sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbMinat9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="9"
+                            android:textSize="8sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbMinat10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="10"
+                            android:textSize="8sp" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="65sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingRight="5sp"
+                            android:text="Sangat berminat"
+                            android:textAlignment="center"
+                            android:textSize="12sp" />
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10sp"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pelajaran yang paling disukai*"
+                        android:textSize="18sp"
+                        android:textColor="#000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10sp"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="IPA" />
+
+                            <RadioButton
+                                android:id="@+id/rbIpa1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Matematika"
+                                android:textSize="12sp" />
+
+                            <RadioButton
+                                android:id="@+id/rbIpa3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Kimia"
+                                android:textSize="12sp" />
+
+                            <RadioButton
+                                android:id="@+id/rbIpa2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Fisika"
+                                android:textSize="12sp" />
+
+                            <RadioButton
+                                android:id="@+id/rbIpa4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Biologi"
+                                android:textSize="12sp" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pelajaran yang disukai (minimal 2)"
+                        android:textSize="18sp"
+                        android:textColor="#000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingBottom="20sp">
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="IPS" />
+
+                        <CheckBox
+                            android:id="@+id/cbIps1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ekonomi"
+                            android:textSize="12sp" />
+
+                        <CheckBox
+                            android:id="@+id/cbIps2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Sejarah"
+                            android:textSize="12sp" />
+
+                        <CheckBox
+                            android:id="@+id/cbIps3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Geografi"
+                            android:textSize="12sp" />
+
+                        <CheckBox
+                            android:id="@+id/cbIps4"
+                            android:layout_width="117dp"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10sp"
+                            android:text="Sosiologi / Antropologi"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ceritakan tentang diri anda dan apa yang anda harapkan setelah lulus dari PNJ (minimal 2 paragraf)*"
+                        android:textSize="18sp"
+                        android:textColor="#000"/>
+
+                    <EditText
+                        android:id="@+id/txTentang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10sp"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal rencana mengumpulkan tugas ini*"
+                        android:textSize="18sp"
+                        android:textColor="#000"/>
+
+                    <EditText
+                        android:id="@+id/dKumpul"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10sp"
+                        android:ems="10"
+                        android:inputType="date" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jam rencana mengumpulkan tugas ini*"
+                        android:textSize="18sp"
+                        android:textColor="#000"/>
+
+                    <EditText
+                        android:id="@+id/tKumpul"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10sp"
+                        android:ems="10"
+                        android:inputType="time" />
+
+                    <Button
+                        android:id="@+id/btnKirim"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="16sp"
+                        android:layout_marginBottom="16sp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:onClick="kirim_data"
+                        android:paddingTop="16sp"
+                        android:paddingBottom="16sp"
+                        android:text="Submit"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
